@@ -1,0 +1,147 @@
+
+
+.vehicles {
+		img {
+			width: 91.5%;
+			height: auto;
+			position: absolute;
+			z-index: 10;
+			overflow: auto;
+			border: 2px solid transparent;
+			top: 37.5%;
+			left: 4.1%;
+		}
+}
+
+.promos {
+		img {
+			width: 91.5%;
+			height: auto;
+			position: absolute;
+			z-index: 10;
+			overflow: auto;
+			border: 2px solid transparent;
+			top: 67.5%;
+			left: 4.1%;
+		}
+}
+.container2 {
+	margin: 0;
+	width: 100%;
+}
+
+body {
+	background-color: #000;
+	padding-bottom: 0;
+}
+
+.carousel-control {
+	z-index: 10;
+}
+
+.carousel {
+	margin-bottom: 11%;
+}
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.img-2 {
+	padding-bottom: 6.5%;
+}
+
+h2 {
+	font-size: 245%;
+	color: #fff;
+	position: absolute;
+	top: 8%;
+	font-family: arial;
+	left: 12%;
+	width: 24%;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 7px;
+}
+
+h4 {
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 25%;
+	font-family: arial;
+	left: 12%;
+}
+
+h5 {
+	font-size: 12px;
+	color: @colorAccent;
+	position: absolute;
+	top: 30%;
+	font-family: arial;
+	left: 12%;
+}
+
+.link-2-pos {
+	top: 34%;
+}
+
+.hero-button {
+	font-size: 15px;
+	color: #000;
+	position: absolute;
+	top: 41%;
+	font-family: arial;
+	left: 12%;
+	background-image: linear-gradient(bottom, rgb(223,138,1) 16%, rgb(255,179,2) 81%, rgb(255,179,2) 77%);
+	background-image: -o-linear-gradient(bottom, rgb(223,138,1) 16%, rgb(255,179,2) 81%, rgb(255,179,2) 77%);
+	background-image: -moz-linear-gradient(bottom, rgb(223,138,1) 16%, rgb(255,179,2) 81%, rgb(255,179,2) 77%);
+	background-image: -webkit-linear-gradient(bottom, rgb(223,138,1) 16%, rgb(255,179,2) 81%, rgb(255,179,2) 77%);
+	background-image: -ms-linear-gradient(bottom, rgb(223,138,1) 16%, rgb(255,179,2) 81%, rgb(255,179,2) 77%);
+	border: none;
+	padding: 5px;
+	border-radius: 5px;	
+}
+
+.carousel-indicators .active {
+	background-color: @colorAccent;
+}
+.carousel-control {
+	font-size: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+ @media (max-width: 550px){
+	.promos img {
+		display: none;
+	}
+}
+
+@media (max-width: 1154px){
+	h2 {
+		font-size: 25px;
+		line-height: 23px;
+	}
+
+	h4 {
+		top: 21%;
+	}
+
+	h5 {
+		top: 25%;
+	}
+
+	.link-2-pos {
+		top: 29%;
+	}
+
+	.hero-button {
+		top: 37%;	
+	}
+}
+
+@media (max-width: 886px){
+	h2, h4, h5, .hero-button {
+		display: none;
+	}
+}

@@ -1,0 +1,107 @@
+
+
+.navbar-inverse .navbar-inner {	
+	background-image: linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -o-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+}
+
+.container {
+	height: 60px;
+	background-image: linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -o-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(51,51,51) 86%);
+
+	.active {
+	background-color: #000;
+	border-top: 2px solid @colorBrand;
+	color: #fff;
+	}
+}
+
+.navbar-inverse .nav>li>a {
+	color: #999;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	padding: 20px;
+	border-left: solid 1px #252323;
+}
+
+.nav-border-right {
+	border-right: solid 1px #252323;
+}
+
+
+
+.navbar-inverse .brand {
+	background: url(../img/sprite_nav.png) -264px -381px no-repeat;
+	text-indent: -9999px;
+	width:98px;
+	height:34px;
+	margin-left: 20%;
+	padding-right: 10px;
+}
+
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.dropdown-menu>li>a {
+	color: #d5d3d4;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: @colorBrand !important;
+}
+
+.nav-header {
+	color: #fefeff;
+	text-shadow: 0 0px 0 rgba(255,255,255,0.5);
+	font-size: 1em;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-submenu:hover>a, .dropdown-submenu:focus>a {
+	background-color: @colorBrand;
+	background-image: none;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	color: #000;
+}
+
+.banner-promo {
+	background: url(../img/sprite_nav.png) -394px -392px no-repeat;
+	margin-left: 2%;
+	padding-right: 62px;
+	padding-bottom: 59px;
+}
+
+
+
+ @media (max-width: 980px){
+
+	.nav-collapse, .nav-collapse.collapse {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: 11;
+		background-color: rgba(0, 0, 0, .7);
+		border-radius: 6px;
+		width: 85%;
+	}
+
+	.navbar-inverse .nav-collapse .nav>li>a:hover {
+		background-color: @colorBrand;
+		color: #000;
+		-webkit-transition:  .7s;
+		-moz-transition:  .7s;
+		-ms-transition:  .7s;
+		-o-transition:  .7s;
+		transition:  .7s;
+	}
+}
