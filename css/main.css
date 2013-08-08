@@ -5617,6 +5617,103 @@ h5 {
   width: 42%;
   font-weight: 300;
 }
+.section-title {
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  color: #313131;
+  margin-left: 20%;
+  margin-top: 7%;
+}
+#jeepColorBlack {
+  background: url("../img/colorizer/black_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorGreen {
+  background: url("../img/colorizer/commando_green_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorWhite {
+  background: url("../img/colorizer/bright_white_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorSilver {
+  background: url("../img/colorizer/billet_silver_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorBlue {
+  background: url("../img/colorizer/true_blue_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorTan {
+  background: url("../img/colorizer/dune_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorRed {
+  background: url("../img/colorizer/rock_lobster_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+#jeepColorBrown {
+  background: url("../img/colorizer/rugged_brown_no_top.jpg") no-repeat;
+  background-size: cover;
+}
+.jeepImage {
+  width: 100.1%;
+  height: 441px;
+  background-size: cover;
+  margin-top: 4%;
+  margin-bottom: -5%;
+}
+.jeep-black,
+.jeep-green,
+.jeep-white,
+.jeep-silver,
+.jeep-blue,
+.jeep-tan,
+.jeep-red,
+.jeep-brown {
+  float: left;
+  background: url("../img/colorizer/sprite_colorizer.png");
+  width: 42px;
+  height: 42px;
+  background-position: 0px 0px;
+}
+.jeep-green {
+  background-position: -40px 0px;
+}
+.jeep-white {
+  background-position: -120px 0px;
+}
+.jeep-silver {
+  background-position: -160px 0px;
+}
+.jeep-blue {
+  background-position: -201px 0px;
+}
+.jeep-tan {
+  background-position: -240px 0px;
+}
+.jeep-red {
+  background-position: -280px 0px;
+}
+.jeep-brown {
+  background-position: -320px 0px;
+}
+.jeep-black:hover,
+.jeep-green:hover,
+.jeep-white:hover,
+.jeep-silver:hover,
+.jeep-blue:hover,
+.jeep-tan:hover,
+.jeep-red:hover,
+.jeep-brown:hover {
+  opacity: .6;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
 @media (max-width: 550px) {
   .promos img {
     display: none;
