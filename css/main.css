@@ -5261,13 +5261,6 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-.navbar-inverse .navbar-inner {
-  background-image: linear-gradient(bottom, #000000 0%, #333333 86%);
-  background-image: -o-linear-gradient(bottom, #000000 0%, #333333 86%);
-  background-image: -moz-linear-gradient(bottom, #000000 0%, #333333 86%);
-  background-image: -webkit-linear-gradient(bottom, #000000 0%, #333333 86%);
-  background-image: -ms-linear-gradient(bottom, #000000 0%, #333333 86%);
-}
 .container {
   height: 60px;
   background-image: linear-gradient(bottom, #000000 0%, #333333 86%);
@@ -5286,6 +5279,7 @@ a.badge:focus {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   padding: 20px;
   border-left: solid 1px #252323;
+  font-size: 1.2em;
 }
 .navbar-inverse .nav > li > a:hover {
   border-top: 4px #ffb302 solid;
@@ -5300,7 +5294,7 @@ a.badge:focus {
   text-indent: -9999px;
   width: 98px;
   height: 34px;
-  margin-left: 20%;
+  margin-left: 8%;
   padding-right: 10px;
 }
 .dropdown-menu {
@@ -5332,9 +5326,11 @@ a.badge:focus {
 }
 .banner-promo {
   background: url(../img/sprite_nav.png) -394px -392px no-repeat;
-  margin-left: 2%;
-  padding-right: 62px;
+  margin-left: 15%;
+  padding-right: 39px;
   padding-bottom: 89px;
+  text-indent: -1300px;
+  display: inline-block;
 }
 @media (max-width: 980px) {
   .nav-collapse,
@@ -5377,13 +5373,15 @@ a.badge:focus {
   top: 67.5%;
   left: 4.1%;
 }
-.container2 {
+.hero-slider {
   margin: 0;
   width: 100%;
 }
 body {
   background-color: #000;
   padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .carousel-control {
   z-index: 10;
@@ -5403,7 +5401,7 @@ h2 {
   position: absolute;
   top: 8%;
   font-family: arial;
-  left: 12%;
+  left: 10%;
   width: 33%;
   border-bottom: 1px solid #fff;
   padding-bottom: 7px;
@@ -5419,7 +5417,7 @@ h4 {
   position: absolute;
   top: 25%;
   font-family: arial;
-  left: 12%;
+  left: 10%;
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 400;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
@@ -5469,7 +5467,7 @@ h5 {
   width: 23%;
   position: absolute;
   margin-top: -28.6%;
-  left: 12%;
+  left: 10%;
   border-radius: 5px;
   margin-bottom: 4.1%;
 }
@@ -5513,7 +5511,7 @@ h5 {
 }
 .car-body-content {
   background-color: #fff;
-  width: 80%;
+  width: 77.1%;
   height: 1000px;
   margin-left: 10%;
   border-radius: 5px;
@@ -5567,7 +5565,7 @@ h5 {
   font-size: 9px;
   line-height: 1em;
   color: #999999;
-  margin-top: 9%;
+  margin-top: 13%;
 }
 .promo-header {
   float: right;
@@ -5626,36 +5624,52 @@ h5 {
   margin-top: 7%;
 }
 #jeepColorBlack {
-  background: url("../img/colorizer/black_no_top.jpg") no-repeat;
-  background-size: cover;
+  background: url("../img/colorizer/black_no_top.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorGreen {
   background: url("../img/colorizer/commando_green_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorWhite {
   background: url("../img/colorizer/bright_white_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorSilver {
   background: url("../img/colorizer/billet_silver_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorBlue {
   background: url("../img/colorizer/true_blue_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorTan {
   background: url("../img/colorizer/dune_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorRed {
   background: url("../img/colorizer/rock_lobster_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #jeepColorBrown {
   background: url("../img/colorizer/rugged_brown_no_top.jpg") no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .jeepImage {
   width: 100.1%;
@@ -5688,7 +5702,7 @@ h5 {
   background-position: -160px 0px;
 }
 .jeep-blue {
-  background-position: -201px 0px;
+  background-position: -200px 0px;
 }
 .jeep-tan {
   background-position: -240px 0px;
@@ -5716,6 +5730,11 @@ h5 {
 }
 @media (max-width: 550px) {
   .promos img {
+    display: none;
+  }
+}
+@media (max-width: 977px) {
+  .wrangler-info {
     display: none;
   }
 }
@@ -5755,7 +5774,7 @@ h5 {
     top: 22%;
   }
   .wrangler-info {
-    margin-top: -32.6%;
+    margin-top: -30.6%;
   }
   .wrangler-para {
     font-size: .85em;
@@ -5766,11 +5785,11 @@ h5 {
   }
 }
 footer {
-  background-image: linear-gradient(bottom, #222222 0%, #111111 75%);
-  background-image: -o-linear-gradient(bottom, #222222 0%, #111111 75%);
-  background-image: -moz-linear-gradient(bottom, #222222 0%, #111111 75%);
-  background-image: -webkit-linear-gradient(bottom, #222222 0%, #111111 75%);
-  background-image: -ms-linear-gradient(bottom, #222222 0%, #111111 75%);
+  background-image: linear-gradient(bottom, #000000 25%, #232323 78%, #232323 83%);
+  background-image: -o-linear-gradient(bottom, #000000 25%, #232323 78%, #232323 83%);
+  background-image: -moz-linear-gradient(bottom, #000000 25%, #232323 78%, #232323 83%);
+  background-image: -webkit-linear-gradient(bottom, #000000 25%, #232323 78%, #232323 83%);
+  background-image: -ms-linear-gradient(bottom, #000000 25%, #232323 78%, #232323 83%);
   margin-right: -40px;
 }
 .container {
@@ -5784,7 +5803,7 @@ footer {
   width: 100%;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 11px;
   color: #fefeff;
   margin: 0;
   line-height: 2em;
@@ -5793,6 +5812,7 @@ li {
   list-style: none;
 }
 a {
+  font-size: 11px;
   color: #9b999a;
 }
 a:hover {
@@ -5800,14 +5820,15 @@ a:hover {
   text-decoration: none;
 }
 .span3 {
-  width: 190px;
+  margin-left: 50px;
+  width: 152px;
   height: 200px;
 }
 .row {
   margin-left: 4%;
 }
 p {
-  margin-left: 8%;
+  margin-left: 10%;
   width: 84%;
   color: #575556;
 }

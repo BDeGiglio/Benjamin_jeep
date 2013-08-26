@@ -27,7 +27,7 @@
 			left: 4.1%;
 		}
 }
-.container2 {
+.hero-slider {
 	margin: 0;
 	width: 100%;
 }
@@ -35,7 +35,9 @@
 body {
 	background-color: #000;
 	padding-bottom: 0;
-}
+    padding-top: 60px;
+    padding-bottom: 40px;
+ }
 
 .carousel-control {
 	z-index: 10;
@@ -59,7 +61,7 @@ h2 {
 	position: absolute;
 	top: 8%;
 	font-family: arial;
-	left: 12%;
+	left: 10%;
 	width: 33%;
 	border-bottom: 1px solid #fff;
 	padding-bottom: 7px;
@@ -76,7 +78,7 @@ h4 {
 	position: absolute;
 	top: 25%;
 	font-family: arial;
-	left: 12%;
+	left: 10%;
 	font-family: @fontBrand;
 	font-weight: 400;
 	text-shadow:2px 2px rgba(0,0,0, .5);
@@ -136,7 +138,7 @@ h5 {
 	width: 23%;
 	position: absolute;
 	margin-top: -28.6%;
-	left: 12%;
+	left: 10%;
 	border-radius: 5px;
 	margin-bottom: 4.1%;
 }
@@ -189,7 +191,7 @@ h5 {
 
 .car-body-content {
 	background-color: #fff;
-	width: 80%;
+	width: 77.1%;
 	height: 1000px;
 	margin-left: 10%;
 	border-radius: 5px;
@@ -246,7 +248,7 @@ h5 {
 	font-size: 9px;
 	line-height: 1em;
 	color: #999999;
-	margin-top: 9%;
+	margin-top: 13%;
 }
 
 .promo-header {
@@ -299,6 +301,9 @@ h5 {
 	}
 }
 
+// ===============================================================================
+// =============================     color picker section     ====================
+// ===============================================================================
 .section-title {
 	font-family: @fontBrand;
 	font-weight: 300;
@@ -308,46 +313,60 @@ h5 {
 	margin-top: 7%;
 }
 
-
-
 #jeepColorBlack {
-	background: url("../img/colorizer/black_no_top.jpg") no-repeat;
-	background-size: cover;
+	background: url("../img/colorizer/black_no_top.jpg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorGreen {
 	background: url("../img/colorizer/commando_green_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorWhite {
 	background: url("../img/colorizer/bright_white_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorSilver {
 	background: url("../img/colorizer/billet_silver_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorBlue {
 	background: url("../img/colorizer/true_blue_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorTan {
 	background: url("../img/colorizer/dune_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorRed {
 	background: url("../img/colorizer/rock_lobster_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 #jeepColorBrown {
 	background: url("../img/colorizer/rugged_brown_no_top.jpg") no-repeat;
-	background-size: cover;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 }
 
 .jeepImage {
@@ -357,6 +376,10 @@ h5 {
 	margin-top: 4%;
 	margin-bottom: -5%;
 }
+
+// ===============================================================================
+// =============================    color picker    ==============================
+// ===============================================================================
 
 .jeep-black,
 .jeep-green,
@@ -383,7 +406,7 @@ h5 {
 	background-position: -160px 0px;
 }
 .jeep-blue{
-	background-position: -201px 0px;
+	background-position: -200px 0px;
 }
 .jeep-tan{
 	background-position: -240px 0px;
@@ -421,6 +444,12 @@ h5 {
 	.promos img {
 		display: none;
 	}
+}
+
+@media (max-width: 977px){
+		.wrangler-info {
+			display: none;
+		}
 }
 
 @media (max-width: 886px){
@@ -464,7 +493,7 @@ h5 {
 	}
 
 	.wrangler-info {
-		margin-top: -32.6%;
+		margin-top: -30.6%;
 	}
 
 	.wrangler-para {
